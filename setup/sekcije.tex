@@ -1,0 +1,17 @@
+% Za potrebe indeksiranja i generisanja sadržaja,
+% sljedeće vrijednosti stavljaju se na 5,
+% te će time uključivati i \paragraph i \subparagraph
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+% ---------------------------------------------------
+
+% Redefiniše komande za podsekcije:
+% (level 1) \section 
+% (level 2) \ssection (\subsection)
+% (level 3) \sssection (\subsubsection)
+% (level 4) \ssssection (\paragraph)
+
+\let\ssection\subsection
+\let\sssection\subsubsection
+\let\ssssection\paragraph
+% --------------------------------
