@@ -1,41 +1,20 @@
-% Generalna podešavanja dokumenta
-\documentclass[12pt, oneside]{article} 
-\usepackage{amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphics, geometry, titlesec}
-\usepackage[utf8]{inputenc} % UTF-8 input encoding
-\usepackage[T1]{fontenc}
-\usepackage[colorlinks=true, allcolors=blue]{hyperref}
-
-\geometry{tmargin=.75in, bmargin=.75in, lmargin=.75in, rmargin = .75in}
-% -----------------------------------------------------------------------
-
 % Podesi dokument
 \input{setup/setup.tex}
 
 
-% Dokument
 \begin{document}
-% Koristiti ovu indentaciju na početku prvog paragrafa
-\setlength{\parindent}{2em}
+\setlength{\parindent}{2em} % Koristiti ovu indentaciju na početku prvog paragrafa
 
-% Postavi naslov i sadržaj
+% Postavi naslov i sadržaj; pređi na novu stranu
 \maketitle
 \tableofcontents
 
 \newpage
-% ------------------------
 
-% Uvod
 \input{uvod/uvod.tex}
-
-% Matematika
 \input{matematika/matematika.tex}
-
-% Racunarske Nauke - Algoritmi
 \input{rn_algoritmi/rn_algoritmi.tex}
-
-% Racunarske Nauke - Strukture Podataka
 \input{rn_strukture_podataka/rn_strukture_podataka.tex}
 
 
 \end{document}
-% ----------------------------------------------------
