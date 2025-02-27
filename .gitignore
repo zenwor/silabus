@@ -1,0 +1,3 @@
+# Ignore auxiliary files
+out/
+*.synctex.gz
