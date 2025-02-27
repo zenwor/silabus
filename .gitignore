@@ -1,3 +1,4 @@
-# Ignore auxiliary files
+# Ignore auxiliary files and produced PDF
 out/
 *.synctex.gz
+*.pdf
