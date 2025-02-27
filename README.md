@@ -21,6 +21,7 @@ Za kompilaciju dokumenta, potrebno je instalirati [**TeX Live**](https://www.tug
 ```bash
 wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 tar -xvzf install-tl-unx.tar.gz
+rm -rf install-tl-unx.tar.gz
 cd install-tl-*
 sudo ./install-tl
 
@@ -40,3 +41,12 @@ chmod +x compile.sh
 ./compile.sh
 ```
 Kompajlirani dokument, pod imenom `Silabus.pdf` biće generisan u root-u projekta.
+
+Postoji šansa da će se na određenim sistemima morati koristiti `dos2unix` za konverziju same skripte.
+U tom slučaju, pokrenuti:
+```bash
+sudo apt-get update
+sudo apt-get install dos2unix
+
+dos2unix compile.sh
+```
