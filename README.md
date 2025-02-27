@@ -2,6 +2,8 @@
 Silabus za organizaciju takmičenja iz informatike u Republici Srpskoj <br/>
 (Syllabus for the organization of computer science competitions in the Republic of Srpska)
 
+**Silabus možete pogledati ovde**: [Link do silabusa](./Silabus.pdf)
+
 # ℹ️ O projektu
 Projekat je kreiran od strane komisije za zadatke za takmičenja iz informatike u Republici Srpskoj. <br/>
 Dokument je strukturiran po uzoru na oficijalni [IOI silabus](https://ioinformatics.org/page/syllabus/12), te sadrži mnogobrojne kvalitetne resurse na zadane teme. <br/>
