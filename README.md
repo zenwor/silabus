@@ -13,6 +13,7 @@ Kao takav, trebao bi da služi takmičarima u Republici Srpskoj kao orijentir za
 Projekat je kreiran u nadi da takmičarima iz Republike Srpske, ali i okolnih zemalja, pomogne u pripremi takmičenja iz informatike (takmičarskog programiranja).
 
 # 💪 Kontribucija
+> [!IMPORTANT]
 > Trenutno, kontribuciju silabusu, formalno, mogu pridati samo članovi komisije. \
 Za sve sugestije, kontaktirati: `takmicenje.informatika.rpz@gmail.com`.
 
