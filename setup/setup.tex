@@ -10,6 +10,18 @@
 \newcommand{\reg}{\textsuperscript{\textnormal{(REG) }}}
 \newcommand{\rep}{\textsuperscript{\textnormal{(REP) }}}
 
+% Dodavanje linka
+%% Argumenti:
+%%  -- arg#1 - naslov
+%%  -- arg#2 - deskripcija
+%%  -- arg#3 - link
+%% Primjer:
+%% \link{Segment Tree (Lazy Propagation)}{Lazy Propagation je koristan!}{https://some.web.url}
+\newcommand{\link}[3]{%
+  \noindent\textbf{#1} -- \texttt{\href{#3}{#3}} \\  
+  \hspace*{2em}\small#2\vspace{1em}
+}
+
 % Podesi sekcije i zaglavlja
 \input{setup/sekcije.tex}
 \input{setup/zaglavlje.tex}
