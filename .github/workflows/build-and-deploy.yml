@@ -1,0 +1,43 @@
+name: Compile LaTeX and Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          args: >-
+            -pdf
+            -synctex=1
+            -interaction=nonstopmode
+            -file-line-error
+            -aux-directory=./out
+            -output-directory=.
+            -jobname=Silabus
+            -shell-escape
+
+      - name: Copy PDF to frontend directory
+        run: cp Silabus.pdf frontend/
+
+      - name: Deploy to Github Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./frontend
+          publish_branch: gh-pages
