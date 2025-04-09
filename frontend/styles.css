@@ -25,37 +25,26 @@ body {
 header {
   background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
   color: var(--light-text);
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  text-align: center;
 }
 
-.emblem {
-  margin-right: 2rem;
-}
-
-.coat-of-arms {
-  width: 100px;
-  height: auto;
-}
-
-.header-titles h1 {
+.header-title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-}
-
-.header-titles h2 {
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin-bottom: 0.25rem;
+  letter-spacing: 0.5px;
 }
 
 /* Main Content Styles */
@@ -101,12 +90,25 @@ main {
 
 /* Last Updated Styles */
 .last-updated {
+  margin: 2.5rem auto;
   text-align: center;
-  margin: 2rem 0 0;
-  font-style: italic;
-  color: #666;
-  font-size: 0.9rem;
+  padding: 1rem;
+  background-color: rgba(30, 60, 114, 0.08);
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+  max-width: 500px;
+}
+
+.last-updated p {
+  font-size: 1.1rem;
+  font-weight: 500;
   color: var(--primary-color);
+  margin: 0;
+}
+
+.date-highlight {
+  font-weight: 700;
+  color: var(--accent-color);
 }
 
 /* Download Button Styles */
@@ -181,17 +183,13 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .header-container {
-      flex-direction: column;
-      text-align: center;
+  .header-title {
+    font-size: 1.8rem;
   }
-
-  .emblem {
-      margin-right: 0;
-      margin-bottom: 1.5rem;
-  }
-
   .download-button {
-      width: 100%;
+    width: 100%;
+  }
+  .last-updated {
+    padding: 0.8rem;
   }
 }
