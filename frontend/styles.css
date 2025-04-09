@@ -99,6 +99,16 @@ main {
   text-align: justify;
 }
 
+/* Last Updated Styles */
+.last-updated {
+  text-align: center;
+  margin: 2rem 0 0;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+
 /* Download Button Styles */
 .download-section {
   text-align: center;

@@ -18,6 +18,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Copy static files to public directory
+        run: |
+          mkdir -p public
+          cp frontend/** public/
+
+      - name: Inject build date into HTML
+        run: sed -i "s|<!-- BUILD_DATE -->|$(TZ='Europe/Sarajevo' date '+%-d.%-m.%Y.')|g" public/index.html
+
       - name: Compile LaTeX
         uses: xu-cheng/latex-action@v3
         with:
@@ -33,11 +41,11 @@ jobs:
             -shell-escape
 
       - name: Copy PDF to frontend directory
-        run: cp Silabus.pdf frontend/
+        run: cp Silabus.pdf public/
 
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./frontend
+          publish_dir: ./public
           publish_branch: gh-pages
