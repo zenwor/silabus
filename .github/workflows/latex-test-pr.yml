@@ -1,0 +1,27 @@
+name: Test LaTeX Compilation on PR
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-compile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX (Test)
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          args: >-
+            -pdf
+            -synctex=1
+            -interaction=nonstopmode
+            -file-line-error
+            -aux-directory=./out
+            -output-directory=.
+            -jobname=Silabus
+            -shell-escape
