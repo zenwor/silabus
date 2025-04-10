@@ -20,9 +20,14 @@
 %% Primjer:
 %% \link{Segment Tree (Lazy Propagation)}{Lazy Propagation je koristan!}{https://some.web.url}
 \newcommand{\link}[3]{%
-  \noindent\textbf{#1} -- \texttt{\href{#3}{#3}} \\  
-  \hspace*{2em}\small#2\vspace{1em}
+  \noindent\footnotesize\textbf{\href{#3}{#1}}\\%
+  \ifx&#2&
+    \vspace{-0.5em}
+  \else
+    \hspace*{2em}#2 % Render the description only if it's not empty
+  \fi
 }
+
 
 % Podesi sekcije i zaglavlja
 \input{setup/sekcije.tex}
