@@ -2,7 +2,7 @@
 Silabus za organizaciju takmičenja iz informatike u Republici Srpskoj <br/>
 (Syllabus for the organization of computer science competitions in the Republic of Srpska)
 
-**Silabus možete pogledati ovde**: [Link do silabusa](https://lukanedimovic.github.io/silabus/)
+**Silabus možete pogledati ovde**: [Link do silabusa](https://zenwor.github.io/silabus/)
 
 # ℹ️ O projektu
 Projekat je kreiran od strane komisije za zadatke za takmičenja iz informatike u Republici Srpskoj. <br/>
